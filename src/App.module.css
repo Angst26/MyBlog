@@ -1,0 +1,21 @@
+.app{
+    display: grid;
+    grid-template-areas: "header"
+                         "content";
+    grid-template-rows: 1fr 1fr; /* Две строки, высота определяется содержимым */
+     /* Промежуток между элементами */
+}
+
+
+.content{
+    grid-area: content;
+    border: black solid 2px;
+    margin-bottom: 5px;
+}
+
+.header{
+    grid-area: header;
+    border: black solid 2px;
+    height: 70px;
+    display: flex;
+}
